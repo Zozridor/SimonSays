@@ -1,0 +1,17 @@
+body{
+    background-color: beige;
+}
+
+h1{
+    font-family: fantasy;
+    text-align: center;
+}
+
+#score{
+    font-family: fantasy;
+    text-align: center;
+}
+
+#card{
+    background-color: beige;
+}

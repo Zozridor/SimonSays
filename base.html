@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simon Says</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+    <div id="container" class="container text-center mt-5">
+
+        <h1>Simon Says: A Test of Speed and Accuracy</h1>
+
+        <h2 id="command">Simon says... are you ready?</h2>
+
+        <div id="row" class="row justify-content-center mt-5 mb-5">
+            <button id="redButton" type="button" class="w-20 h-40 btn btn-danger btn-lg" onclick="pressRed()" disabled>R</button>
+            <button id="greenButton" type="button" class="w-20 h-40 btn btn-success btn-lg" onclick="pressGreen()" disabled>G</button>
+            <button id="blueButton" type="button" class="w-20 h-40 btn btn-primary btn-lg" onclick="pressBlue()" disabled>B</button>
+            <button id="yellowButton" type="button" class="w-20 h-40 btn btn-warning btn-lg" onclick="pressYellow()" disabled>Y</button>
+            <button id="blackButton" type="button" class="w-20 h-40 btn btn-dark btn-lg" onclick="pressBlack()" disabled>B</button>
+        </div>
+
+        <h1 id="timer">...</h1>
+
+        <button id="startEnd" type="button" class="btn btn-dark mt-5 mb-5" onclick="start()">Start</button>
+        <h2 id="score">Score: 0</h2>
+        <h2 id="highScore"></h2>
+
+    </div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="simonsays.js"></script>
+</body>
+
+</html>
